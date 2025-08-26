@@ -25,4 +25,3 @@ sequenceDiagram
   FrontEnd->>BackEnd: Forwards bytes
   Note right of BackEnd: Parses by Transfer-Encoding (chunked)
   BackEnd-->>FrontEnd: Processes smuggled content
-mkdir -p poc automation mitigations evidence/webinspect docs

